@@ -12,6 +12,7 @@ BOLD=`tput bold`
 RESET=`tput sgr0`
 
 set -euo pipefail
+set +u
 
 echo -e "${YELLOW} INICIANDO AMBIENTE ${RESET}"
 export DEBIAN_FRONTEND=noninteractive
