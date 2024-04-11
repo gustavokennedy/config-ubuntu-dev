@@ -110,4 +110,4 @@ echo "${GREEN}----OK OMZSH E PLUGINS INSTALADOS COM SUCESSO!${RESET}"
 echo "${RED}  Instalando e configurando PowerLevel10k...${RESET}"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 echo "${GREEN}----OK POWERLEVEL10K INSTALADO COM SUCESSO!${RESET}"
- cp .p10k .zsh .zshrc ~/
+sudo cp .p10k.zsh .zshrc ~/
