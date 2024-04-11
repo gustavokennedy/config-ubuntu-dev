@@ -90,7 +90,7 @@ echo "${GREEN}----OK NEOVIM INSTALADO COM SUCESSO!${RESET}"
 
 # NVChad
 echo "${RED}  Instalando e configurando NvChad...${RESET}"
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim
 echo "${GREEN}----OK NVCHAD INSTALADO COM SUCESSO!${RESET}"
 
 # Configura ZSH
