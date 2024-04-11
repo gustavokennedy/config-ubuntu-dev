@@ -102,7 +102,7 @@ echo "${GREEN}----OK ZSH INSTALADO COM SUCESSO!${RESET}"
 
 # Oh My ZSH
 echo "${RED}  Instalando e configurando OhMyZsh e plugins no ZSH...${RESET}"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" > /dev/null 2>&1
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" > /dev/null 2>&1 &
 
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting
