@@ -31,7 +31,7 @@ sudo systemctl restart systemd-timesyncd.service
 echo "${GREEN}----OK TIMEZONE ATUALIZADO COM SUCESSO!${RESET}"
 # Instala pacotes
 echo "${RED} Instalando pacotes necessários..${RESET}."
-sudo apt-get install net-tools ssh build-essential curl file nginx --yes
+sudo apt-get install net-tools ssh build-essential curl file nginx golang-go mysql-server --yes
 echo "${GREEN}----OK PACOTES INSTALADOS COM SUCESSO!${RESET}"
 # Configura Git
 echo "${RED}  Configurando Git (chave, name and email)...${RESET}"
