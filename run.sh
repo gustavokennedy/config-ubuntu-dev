@@ -94,12 +94,6 @@ echo "${RED}  Instalando e configurando NvChad...${RESET}"
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 echo "${GREEN}----OK NVCHAD INSTALADO COM SUCESSO!${RESET}"
 
-# PowerLevel10k
-echo "${RED}  Instalando e configurando PowerLevel10k...${RESET}"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-cp .p10k.zsh ~/
-echo "${GREEN}----OK POWERLEVEL10K INSTALADO COM SUCESSO!${RESET}"
-
 # Configura ZSH
 echo "${RED}  Instalando e configurando ZSH...${RESET}"
 sudo apt-get install zsh --yes
@@ -113,3 +107,9 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting
 echo "${GREEN}----OK OMZSH E PLUGINS INSTALADOS COM SUCESSO!${RESET}"
+
+# PowerLevel10k
+echo "${RED}  Instalando e configurando PowerLevel10k...${RESET}"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+cp .p10k.zsh ~/
+echo "${GREEN}----OK POWERLEVEL10K INSTALADO COM SUCESSO!${RESET}"
