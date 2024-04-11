@@ -45,14 +45,6 @@ curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compo
 chmod +x ~/.docker/cli-plugins/docker-compose
 docker compose version
 echo "${GREEN}----OK DOCKER-COMPOSE INSTALADO COM SUCESSO!${RESET}"
-# Configura Git
-echo "${RED}  Configurando Git (chave, name and email)...${RESET}"
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHp3fzYLzQ0FAWFw6qQa/tRqz35mzqZg/v9a9HpnYRk+ gustavo@overall.cloud" | sudo tee -a ./.ssh/id_ed25519.pub
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-git config --global user.name "Gustavo Kennedy Renkel"
-git config --global user.email gustavo@overall.cloud
-echo "${GREEN}----OK VARIAVEIS GIT CONFIGURADAS COM SUCESSO!${RESET}"
 echo "${RED}  Instalando FontsPowerline...${RESET}"
 sudo apt-get install fonts-powerline
 echo "${GREEN}----OK FONTE POWERLINE CONFIGURADAS COM SUCESSO!${RESET}"
