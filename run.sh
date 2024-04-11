@@ -68,10 +68,8 @@ sudo systemctl status docker
 echo "${GREEN}----OK DOCKER INSTALADO COM SUCESSO!${RESET}"
 # Instala Docker Compose
 echo "${RED}  Instalando Docker-Compose...${RESET}"
-mkdir -p ~/.docker/cli-plugins/
-curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
-chmod +x ~/.docker/cli-plugins/docker-compose
-docker compose version
+sudo apt-get install docker-compose
+docker-compose version
 echo "${GREEN}----OK DOCKER-COMPOSE INSTALADO COM SUCESSO!${RESET}"
 echo "${RED}  Instalando FontsPowerline...${RESET}"
 sudo apt-get install fonts-powerline
