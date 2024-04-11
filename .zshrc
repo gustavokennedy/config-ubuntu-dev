@@ -8,3 +8,5 @@ plugins=( git zsh-syntax-highlighting zsh-autosuggestions )
 source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
