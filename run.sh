@@ -102,10 +102,7 @@ echo "${GREEN}----OK ZSH INSTALADO COM SUCESSO!${RESET}"
 
 # Oh My ZSH
 echo "${RED}  Instalando e configurando OhMyZsh e plugins no ZSH...${RESET}"
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-chmod +x install.sh
-./install.sh > /dev/null 2>&1
-
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting
 echo "${GREEN}----OK OMZSH E PLUGINS INSTALADOS COM SUCESSO!${RESET}"
