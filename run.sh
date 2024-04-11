@@ -30,7 +30,7 @@ sudo systemctl restart systemd-timesyncd.service
 echo "${GREEN}----OK TIMEZONE ATUALIZADO COM SUCESSO!${RESET}"
 # Instala pacotes
 echo "${RED} Instalando pacotes necessários..${RESET}."
-sudo apt-get install build-essential curl file git nginx --yes
+sudo apt-get install build-essential curl file nginx --yes
 echo "${GREEN}----OK PACOTES INSTALADOS COM SUCESSO!${RESET}"
 # Configura Git
 echo "${RED}  Configurando Git (chave, name and email)...${RESET}"
