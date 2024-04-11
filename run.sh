@@ -80,16 +80,6 @@ sudo apt-get install zsh --yes
 chsh -s /usr/bin/zsh
 cp .zshrc ~/
 echo "${GREEN}----OK ZSH INSTALADO COM SUCESSO!${RESET}"
-# Oh My ZSH
-echo "${RED}  Instalando e configurando OhMyZsh e plugins no ZSH...${RESET}"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-# PowerLevel10k
-echo "${RED}  Instalando e configurando PowerLevel10k...${RESET}"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-cp .p10k.zsh ~/
-echo "${GREEN}----OK POWERLEVEL10K INSTALADO COM SUCESSO!${RESET}"
 # NeoVim
 echo "${RED}  Instalando e configurando NeoVim...${RESET}"
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -102,3 +92,14 @@ echo "${GREEN}----OK NEOVIM INSTALADO COM SUCESSO!${RESET}"
 echo "${RED}  Instalando e configurando NvChad...${RESET}"
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 echo "${GREEN}----OK NVCHAD INSTALADO COM SUCESSO!${RESET}"
+# PowerLevel10k
+echo "${RED}  Instalando e configurando PowerLevel10k...${RESET}"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+cp .p10k.zsh ~/
+echo "${GREEN}----OK POWERLEVEL10K INSTALADO COM SUCESSO!${RESET}"
+# Oh My ZSH
+echo "${RED}  Instalando e configurando OhMyZsh e plugins no ZSH...${RESET}"
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo "${GREEN}----OK OMZSH E PLUGINS INSTALADOS COM SUCESSO!${RESET}"
