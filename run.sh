@@ -1,6 +1,6 @@
 #!/bin/bash
-# Para atualizar o Frontend o utilize: ./setup.sh
-# Para problemas de permissão: chmod +x setup.sh
+# Para atualizar o Frontend o utilize: ./run.sh
+# Para problemas de permissão: chmod +x run.sh
 # Gustavo Kennedy Renkel
 
 RED=`tput setaf 1`
