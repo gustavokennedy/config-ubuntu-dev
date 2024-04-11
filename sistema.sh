@@ -32,3 +32,11 @@ echo "${GREEN}----OK TIMEZONE ATUALIZADO COM SUCESSO!${RESET}"
 echo "${RED} Instalando pacotes necessários..${RESET}."
 sudo apt-get install build-essential curl file git nginx --yes
 echo "${GREEN}----OK PACOTES INSTALADOS COM SUCESSO!${RESET}"
+# Configura Git
+echo "${RED}  Configurando Git (chave, name and email)...${RESET}"
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHp3fzYLzQ0FAWFw6qQa/tRqz35mzqZg/v9a9HpnYRk+ gustavo@overall.cloud" | sudo tee -a ./.ssh/id_ed25519.pub
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+git config --global user.name "Gustavo Kennedy Renkel"
+git config --global user.email gustavo@overall.cloud
+echo "${GREEN}----OK VARIAVEIS GIT CONFIGURADAS COM SUCESSO!${RESET}"
