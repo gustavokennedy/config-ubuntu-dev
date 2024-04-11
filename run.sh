@@ -79,6 +79,7 @@ echo "${GREEN}----OK FONTE POWERLINE CONFIGURADAS COM SUCESSO!${RESET}"
 echo "${RED}  Instalando e configurando ZSH...${RESET}"
 sudo apt-get install zsh --yes
 chsh -s /usr/bin/zsh
+cp .zshrc ~/
 echo "${GREEN}----OK ZSH INSTALADO COM SUCESSO!${RESET}"
 # Oh My ZSH
 echo "${RED}  Instalando e configurando OhMyZsh e plugins no ZSH...${RESET}"
@@ -88,6 +89,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 # PowerLevel10k
 echo "${RED}  Instalando e configurando PowerLevel10k...${RESET}"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+cp .p10k.zsh ~/
 echo "${GREEN}----OK POWERLEVEL10K INSTALADO COM SUCESSO!${RESET}"
 # NeoVim
 echo "${RED}  Instalando e configurando NeoVim...${RESET}"
