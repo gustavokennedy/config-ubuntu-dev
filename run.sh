@@ -103,12 +103,8 @@ echo "${GREEN}----OK ZSH INSTALADO COM SUCESSO!${RESET}"
 
 # Oh My ZSH
 echo "${RED}  Instalando e configurando OhMyZsh e plugins no ZSH...${RESET}"
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" > /dev/null 2>&1
 
-# Se a instalação do Oh My Zsh for bem-sucedida, iniciar um novo shell
-if [ -f "$HOME/.zshrc" ]; then
-    exec zsh
-fi
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting
 echo "${GREEN}----OK OMZSH E PLUGINS INSTALADOS COM SUCESSO!${RESET}"
