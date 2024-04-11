@@ -41,9 +41,11 @@ ssh-add ~/.ssh/id_ed25519
 git config --global user.name "Gustavo Kennedy Renkel"
 git config --global user.email gustavo@overall.cloud
 echo "${GREEN}----OK VARIAVEIS GIT CONFIGURADAS COM SUCESSO!${RESET}"
+
 #
 # DEV
 # 
+
 # Instala NVM e Node
 echo "${RED}  Instalando NVM & NodeJS...${RESET}"
 sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh
@@ -55,6 +57,7 @@ nvm install node
 echo "${GREEN}----OK NVM E NODEJS INSTALADOS COM SUCESSO!${RESET}"
 sudo systemctl reload nginx && sudo systemctl restart nginx
 echo "${GREEN}----OK NGINX REINICIADO COM SUCESSO!${RESET}"
+
 # Instala Docker
 echo "${RED}  Instalando Docker...${RESET}"
 sudo apt install apt-transport-https ca-certificates curl software-properties-common --yes
@@ -65,6 +68,7 @@ sudo apt install docker-ce
 sudo usermod -aG docker ${USER}
 sudo usermod -aG docker kennedy
 echo "${GREEN}----OK DOCKER INSTALADO COM SUCESSO!${RESET}"
+
 # Instala Docker Compose
 echo "${RED}  Instalando Docker-Compose...${RESET}"
 sudo apt-get install docker-compose --yes
@@ -74,12 +78,7 @@ echo "${GREEN}----OK DOCKER-COMPOSE INSTALADO COM SUCESSO!${RESET}"
 echo "${RED}  Instalando FontsPowerline...${RESET}"
 sudo apt-get install fonts-powerline --yes
 echo "${GREEN}----OK FONTE POWERLINE CONFIGURADAS COM SUCESSO!${RESET}"
-# Configura ZSH
-echo "${RED}  Instalando e configurando ZSH...${RESET}"
-sudo apt-get install zsh --yes
-chsh -s /usr/bin/zsh
-cp .zshrc ~/
-echo "${GREEN}----OK ZSH INSTALADO COM SUCESSO!${RESET}"
+
 # NeoVim
 echo "${RED}  Instalando e configurando NeoVim...${RESET}"
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -88,15 +87,25 @@ chmod u+x nvim.appimage
 sudo mv squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 echo "${GREEN}----OK NEOVIM INSTALADO COM SUCESSO!${RESET}"
+
 # NVChad
 echo "${RED}  Instalando e configurando NvChad...${RESET}"
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 echo "${GREEN}----OK NVCHAD INSTALADO COM SUCESSO!${RESET}"
+
 # PowerLevel10k
 echo "${RED}  Instalando e configurando PowerLevel10k...${RESET}"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 cp .p10k.zsh ~/
 echo "${GREEN}----OK POWERLEVEL10K INSTALADO COM SUCESSO!${RESET}"
+
+# Configura ZSH
+echo "${RED}  Instalando e configurando ZSH...${RESET}"
+sudo apt-get install zsh --yes
+chsh -s /usr/bin/zsh
+cp .zshrc ~/
+echo "${GREEN}----OK ZSH INSTALADO COM SUCESSO!${RESET}"
+
 # Oh My ZSH
 echo "${RED}  Instalando e configurando OhMyZsh e plugins no ZSH...${RESET}"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
