@@ -25,11 +25,7 @@ git clone https://github.com/gustavokennedy/config-ubuntu-dev.git
 ## Rodar
 
 ```
-chmod +x run.sh
-```
-
-```
-./run.sh
+chmod +x run.sh && ./run.sh
 ```
 
 
