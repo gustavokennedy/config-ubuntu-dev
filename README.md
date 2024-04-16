@@ -6,7 +6,7 @@ Script for initial Ubuntu configurations for development environment.
 Atualizado repo e instala pacotes:
 
 ```
-sudo apt-get update && sudo apt-get install git net-tools
+sudo apt-get update && sudo apt-get install git net-tools ssh
 ```
 
 ### Adiciona usuário ao sudoers:
