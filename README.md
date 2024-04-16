@@ -24,16 +24,14 @@ git clone https://github.com/gustavokennedy/config-ubuntu-dev.git
 
 ## Rodar
 
+```
+chmod +x run.sh
+```
 
 ```
 ./run.sh
 ```
 
-Problema de permissão:
-
-```
-chmod +x run.sh
-```
 
 Para limpar tudo:
 
