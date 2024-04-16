@@ -1,5 +1,27 @@
-# config-ubuntu-dev
+# Initial Config for Ubuntu - DEV
 Script for initial Ubuntu configurations for development environment.
+
+### Update
+
+Atualizado repo e instala pacotes:
+
+```
+sudo apt-get update && sudo apt-get git && net-tools
+```
+
+### Adiciona usuário ao sudoers:
+ 
+```
+sudo -i
+nano /etc/sudoers
+```
+
+### Clona o repo:
+ 
+```
+git clone https://github.com/gustavokennedy/config-ubuntu-dev.git
+```
+
 
 Problema de permissão:
 
