@@ -22,6 +22,12 @@ nano /etc/sudoers
 git clone https://github.com/gustavokennedy/config-ubuntu-dev.git
 ```
 
+## Rodar
+
+
+```
+./run.sh
+```
 
 Problema de permissão:
 
