@@ -22,6 +22,14 @@ nano /etc/sudoers
 git clone https://github.com/gustavokennedy/config-ubuntu-dev.git
 ```
 
+### SSH key
+
+Adicionar chave privada em:
+
+```
+sudo nano /home/kennedy/.ssh/id_ed25519
+```
+
 ## Rodar
 
 ```
