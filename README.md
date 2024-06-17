@@ -8,7 +8,6 @@ Script for initial Ubuntu configurations for development environment.
 ```
 su -i
 nano /etc/sudoers
-
 ```
 Atualizado repo e instala pacotes:
 
