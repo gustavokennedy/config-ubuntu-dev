@@ -3,17 +3,17 @@ Script for initial Ubuntu configurations for development environment.
 
 ### Update
 
+### Adiciona usuário ao sudoers:
+ 
+```
+su -i
+nano /etc/sudoers
+
+```
 Atualizado repo e instala pacotes:
 
 ```
 sudo apt-get update && sudo apt-get install git net-tools ssh
-```
-
-### Adiciona usuário ao sudoers:
- 
-```
-sudo -i
-nano /etc/sudoers
 ```
 
 ### Clona o repo:
