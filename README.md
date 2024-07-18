@@ -23,7 +23,7 @@ git clone https://github.com/gustavokennedy/config-ubuntu-dev.git
 
 ### SSH key
 
-Adicionar chave privada em:
+Adicionar [chave privada](https://github.com/gustavokennedy/ssh-pk) em:
 
 ```
 sudo nano /home/kennedy/.ssh/id_ed25519
