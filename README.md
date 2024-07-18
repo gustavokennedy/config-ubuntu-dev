@@ -6,7 +6,7 @@ Script for initial Ubuntu configurations for development environment.
 ### Adiciona usuário ao sudoers:
  
 ```
-su -i
+su -
 nano /etc/sudoers
 ```
 Atualizado repo e instala pacotes:
