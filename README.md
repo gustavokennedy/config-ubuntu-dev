@@ -26,7 +26,13 @@ git clone https://github.com/gustavokennedy/config-ubuntu-dev.git
 Adicionar [chave privada](https://github.com/gustavokennedy/ssh-pk) em:
 
 ```
-sudo nano /home/kennedy/.ssh/id_ed25519
+sudo nano ~/.ssh/id_ed25519
+```
+
+Para possível erro de 'cannot touch':
+
+```
+sudo chown [seu usuario] ~/.ssh/id_ed25519.pub
 ```
 
 ## Rodar
