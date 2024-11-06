@@ -1,6 +1,14 @@
 # Initial Config for Ubuntu - DEV
 Script for initial Ubuntu configurations for development environment.
 
+### Debian
+
+For Debian, remove in `run.sh`:
+
+Line 34: `mysql-server`
+
+Docker, from lines `62 to 70`.
+
 ### Update
 
 ### Adiciona usuário ao sudoers:
