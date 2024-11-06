@@ -32,7 +32,7 @@ sudo nano ~/.ssh/id_ed25519
 Para possível erro de 'cannot touch':
 
 ```
-sudo chown [seu usuario] ~/.ssh/id_ed25519.pub
+sudo chown [seu usuario] ~/.ssh/id_ed25519
 ```
 
 ## Rodar
