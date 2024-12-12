@@ -31,7 +31,7 @@ sudo systemctl restart systemd-timesyncd.service
 echo "${GREEN}----OK TIMEZONE ATUALIZADO COM SUCESSO!${RESET}"
 # Instala pacotes
 echo "${RED} Instalando pacotes necessários..${RESET}."
-sudo apt-get install net-tools ssh build-essential curl file nginx golang-go mysql-server --yes
+sudo apt-get install net-tools ssh build-essential curl file golang-go mysql-server --yes
 echo "${GREEN}----OK PACOTES INSTALADOS COM SUCESSO!${RESET}"
 # Configura Git
 echo "${RED}  Configurando Git (chave, name and email)...${RESET}"
@@ -56,8 +56,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm install node
 echo "${GREEN}----OK NVM E NODEJS INSTALADOS COM SUCESSO!${RESET}"
-sudo systemctl reload nginx && sudo systemctl restart nginx
-echo "${GREEN}----OK NGINX REINICIADO COM SUCESSO!${RESET}"
 
 # Instala Docker
 echo "${RED}  Instalando Docker...${RESET}"
