@@ -68,10 +68,10 @@ sudo usermod -aG docker ${USER}
 echo "${GREEN}----OK DOCKER INSTALADO COM SUCESSO!${RESET}"
 
 # Instala Docker Compose
-echo "${RED}  Instalando Docker-Compose...${RESET}"
-sudo apt-get install docker-compose --yes
-sudo chmod 666 /var/run/docker.sock
-docker-compose version
+# echo "${RED}  Instalando Docker-Compose...${RESET}"
+# sudo apt-get install docker-compose --yes
+# sudo chmod 666 /var/run/docker.sock
+# docker-compose version
 echo "${GREEN}----OK DOCKER-COMPOSE INSTALADO COM SUCESSO!${RESET}"
 echo "${RED}  Instalando FontsPowerline...${RESET}"
 sudo apt-get install fonts-powerline --yes
