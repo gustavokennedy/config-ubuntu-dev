@@ -1,13 +1,30 @@
 # Initial Config for Ubuntu - DEV
-Script for initial Ubuntu configurations for development environment.
+Script para configuração inicial de um ambiente de desenvolvimento no Ubuntu Server (26.04).
+
+Ao rodar, um **menu interativo (whiptail)** abre com todos os componentes pré-marcados —
+desmarque (barra de espaço) o que não quiser instalar e confirme com Enter. O script é
+**idempotente** (pode rodar mais de uma vez sem quebrar).
+
+### Componentes selecionáveis
+
+- **MySQL Server**
+- **Go** (golang-go)
+- **Node.js** via nvm (LTS)
+- **Docker** Engine + Compose v2
+- **NeoVim** + NvChad
+- **Zsh** + Oh My Zsh + Powerlevel10k
+- **Busca:** ripgrep, fd, fzf, bat
+- **Git:** lazygit, git-delta
+- **Sessão:** tmux, btop, ncdu
+- **Shell:** zoxide, eza, jq
+- **Python:** pip + pyenv
+
+Sempre instalado (base): atualização do sistema, timezone, pacotes essenciais
+(build-essential, curl, git, ssh...) e configuração de Git/SSH.
 
 ### Debian
 
-For Debian, remove in `run.sh`:
-
-Line 34: `mysql-server`
-
-Docker, from lines `62 to 70`.
+Para Debian, basta **desmarcar Docker** no menu (o repositório usa a URL do Ubuntu).
 
 ### Update
 
@@ -53,5 +70,5 @@ chmod +x run.sh && ./run.sh
 Para limpar tudo:
 
 ```
-sudo rm -rf /squashfs-root && sudo rm -rf /usr/bin/nvim && sudo rm -rf /home/kennedy/.config/nvim && sudo rm -rf /home/kennedy/.oh-my-zsh/custom/themes/powerlevel10k && sudo rm -rf /home/kennedy/.oh-my-zsh
+sudo rm -rf /opt/nvim && sudo rm -rf /usr/bin/nvim && rm -rf "$HOME/.config/nvim" && rm -rf "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" && rm -rf "$HOME/.oh-my-zsh"
 ```
