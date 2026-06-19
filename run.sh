@@ -299,7 +299,8 @@ if is_selected ZSH; then
     } >> ~/.zshrc
   fi
 
-  chsh -s "$(which zsh)" || warn "não foi possível trocar o shell padrão; rode 'chsh -s $(which zsh)' manualmente."
+  # Usa sudo para não pedir a senha do usuário (PAM) ao trocar o shell.
+  sudo chsh -s "$(which zsh)" "$USER" || warn "não foi possível trocar o shell padrão; rode 'chsh -s $(which zsh)' manualmente."
   ok "DOTFILES"
 fi
 
